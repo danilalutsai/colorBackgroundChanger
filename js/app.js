@@ -21,11 +21,15 @@ const hex = [
   '9',
 ]
 
-button.addEventListener("click", () => {
+function setColor() {
   let hexColor = generateHex()
   document.body.style.backgroundColor = hexColor
+  color.style.color = hexColor
   color.textContent = hexColor
-})
+}
+
+button.addEventListener("click", setColor)
+setColor()
 
 function generateHex() {
   let hexColor = "#"
@@ -33,7 +37,6 @@ function generateHex() {
     hexColor += hex[getRandomNumber()]
 
   }
-  
   return hexColor
 }
 
