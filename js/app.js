@@ -1,7 +1,6 @@
 const button = document.getElementById('btn')
 const color = document.querySelector(".color")
 
-
 const hex = [
   'A',
   'B',
